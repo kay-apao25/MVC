@@ -1,2 +1,2 @@
-MVC-Model-View-Contoller-
+CSC 184 (Model-View-Controller)
 =========================
