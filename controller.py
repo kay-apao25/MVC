@@ -31,9 +31,9 @@ def shorten():
     short_url = request.host + '/' + url_model.short_url
     return render_template('success.html', short_url=short_url)
 
-    @app.route('/<path:path>')
-    def redirect_to_full(path=''):
-        """Gets short url and redirects user to corresponding full url if
+@app.route('/<path:path>')
+def redirect_to_full(path=''):
+    """Gets short url and redirects user to corresponding full url if
 found."""
     # Model returns object with full_url property
     url_model = models.Url.get_by_short_url(path)
